@@ -5,72 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🎮 PLAY HTML</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #101322;
-      color: white;
-    }
-    header {
-      padding: 22px;
-      background: #191f35;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    h1 { margin: 0; color: #8d9cff; }
-    .hero {
-      text-align: center;
-      padding: 55px 20px;
-      background: linear-gradient(135deg,#252d58,#151a30);
-    }
-    .hero h2 { font-size: 34px; margin-bottom: 10px; }
-    .search {
-      display: block;
-      width: min(90%, 500px);
-      margin: 25px auto;
-      padding: 15px;
-      border-radius: 12px;
-      border: 1px solid #414c75;
-      background: #202844;
-      color: white;
-      font-size: 16px;
-    }
-    main { padding: 25px; max-width: 1100px; margin: auto; }
-    .games {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 18px;
-    }
-    .game {
-      background: #1b2239;
-      border: 1px solid #303b60;
-      border-radius: 17px;
-      padding: 20px;
-    }
-    .game-icon { font-size: 48px; }
-    .game h3 { margin-bottom: 8px; }
-    .game p { color: #b9c2df; }
-    button {
-      border: 0;
-      border-radius: 10px;
-      padding: 12px 17px;
-      background: #7185ff;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    button:hover { background: #596fe9; }
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #8993b5;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <header>
@@ -81,17 +17,18 @@
   <section class="hero">
     <h2>Твій світ HTML-ігор!</h2>
     <p>Знаходь цікаві ігри та відкривай нові пригоди.</p>
-    <input class="search" id="search" placeholder="🔍 Пошук ігор...">
+    <input
+      class="search"
+      id="search"
+      type="search"
+      placeholder="🔍 Пошук ігор..."
+    >
   </section>
 
   <main>
     <h2>🔥 Каталог ігор</h2>
     <div class="games" id="games">
-      <article class="game">
-        <div class="game-icon">🎯</div>
-        <h3>Ігри скоро з'являться!</h3>
-        <p>Каталог поповнюватиметься після налаштування магазину.</p>
-      </article>
+      <p>Завантаження ігор...</p>
     </div>
   </main>
 
